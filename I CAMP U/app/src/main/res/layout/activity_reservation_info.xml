@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <!-- 상단 타이틀바 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/res_info_back_btn"
+            android:layout_width="25dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/res_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="예약 정보"
+            android:textStyle="bold"
+            android:textSize="21dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 프로필 사진 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp">
+                    <!-- 바탕뷰 -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@color/colorPrimary" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <!-- 이미지 테두리-->
+                        <ImageView
+                            android:layout_width="163dp"
+                            android:layout_height="163dp"
+                            android:layout_centerInParent="true"
+                            android:src="@color/colorPrimary" />
+                        <!-- QR code 이미지 -->
+                        <ImageView
+                            android:id="@+id/res_info_qrcode"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/qrcode_no"
+                            android:background="#FFFFFF"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+                        <!-- 예약 번호 -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약번호:  "
+                            android:textColor="#5D5D5D"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:id="@+id/res_info_reservation_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADSDS1242141"
+                            android:textColor="#5D5D5D"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <!-- 캠핑장 종류 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2.5"
+                        android:text="캠핑장 종류" />
+                    <EditText
+                        android:id="@+id/res_info_camping_place"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="7.5"
+                        android:editable="false"
+                        android:text="난지 캠핑장"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <!-- 예약 날짜 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2.5"
+                        android:text="예약 날짜" />
+
+                    <EditText
+                        android:id="@+id/res_info_date"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="7.5"
+                        android:editable="false"
+                        android:text="2018-09-27 목 ~ 2018-09-28 금"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <!-- 텐트 종류 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2.5"
+                        android:text="텐트 종류" />
+
+                    <EditText
+                        android:id="@+id/res_info_tent"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="7.5"
+                        android:editable="false"
+                        android:text="몽골텐트_대"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <!-- 텐트 수량 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2.5"
+                        android:text="텐트 수량" />
+                    <EditText
+                        android:id="@+id/res_info_tent_num"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="7.5"
+                        android:editable="false"
+                        android:text="1개"
+                        android:background="@null"/>
+                </LinearLayout>
+
+
+                <!-- 총 금액 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2.5"
+                        android:text="총 금액" />
+                    <EditText
+                        android:id="@+id/res_info_total_price"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="7.5"
+                        android:editable="false"
+                        android:text="50000원"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <!-- 확인 버튼 -->
+                <Button
+                    android:id="@+id/res_info_confirm"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_login_button"
+                    android:text="Confirm"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

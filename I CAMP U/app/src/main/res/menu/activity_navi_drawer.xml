@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_mypage"
+                android:title="내 정보"
+                android:icon="@drawable/mypage_icon"
+                />
+            <item
+                android:id="@+id/nav_reservation_information"
+                android:title="예약 정보"
+                android:icon="@drawable/reservation_info_icon"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="로그아웃"
+                android:icon="@drawable/logout_icon"/>
+    </group>
+</menu>

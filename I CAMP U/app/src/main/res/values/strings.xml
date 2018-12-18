@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">I CAMP U</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_home"></string>
+    <string name="title_reservation">예약</string>
+    <string name="title_home">홈</string>
+    <string name="title_exchange">교환</string>
+    <string name="title_event">이벤트</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_activity_navi">NaviActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- 난지 캠핑장 -->
+    <string name="nanji_1">가족 텐트</string>
+    <string name="nanji_2">몽골 텐트_대</string>
+    <string name="nanji_3">몽골 텐트_대(냉_난방 포함)</string>
+    <string name="nanji_4">몽골 텐트_중</string>
+    <string name="nanji_5">몽골 텐트_중(냉_난방 포함)</string>
+    <string name="nanji_6">몽골 텐트_특대(5x4)</string>
+    <string name="nanji_7">몽골 텐트_특대(5x5)</string>
+    <string name="nanji_8">캐빈 텐트</string>
+    <string name="nanji_9">캐빈 텐트(냉_난방 포함)</string>
+    <string name="price_1">33,000원</string>
+    <string name="price_2">50,000원</string>
+    <string name="price_3">68,000원</string>
+    <string name="price_4">40,000원</string>
+    <string name="price_5">58,000원</string>
+    <string name="price_6">70,000원</string>
+    <string name="price_7">70,000원</string>
+    <string name="price_8">44,500원</string>
+    <string name="price_9">62,500원</string>
+
+    <!--노을 캠핑장-->
+    <string name="noeul_1">A 구역</string>
+    <string name="noeul_2">B 구역</string>
+    <string name="noeul_3">C 구역</string>
+    <string name="noeul_4">D 구역</string>
+    <string name="noeul_price_1">13,000원</string>
+    <string name="noeul_price_2">10,000원</string>
+    <string name="noeul_price_3">13,000원</string>
+    <string name="noeul_price_4">13,000원</string>
+
+
+    <!--서울대공원,중랑 캠핑장-->
+    <string name="seoul_1">4인용</string>
+    <string name="seoul_price_1">25,000원</string>
+
+    <!--강동 캠핑장-->
+    <string name="gangdong_1">오토 캠핑장</string>
+    <string name="gangdong_2">가족 캠핑장</string>
+    <string name="gangdong_3">매화나무 캠핑장</string>
+    <string name="gangdong_price_1">21,000원</string>
+    <string name="gangdong_price_2">20,000원</string>
+    <string name="gangdong_price_3">20,000원</string>
+
+    <!--초안산 캠핑장-->
+    <string name="choan_1">일반 캠핑장</string>
+    <string name="choan_2">오토 캠핑장</string>
+    <string name="choan_3">데크 캠핑장</string>
+    <string name="choan_4">캐빈하우스</string>
+    <string name="choan_price_1">15,000원</string>
+    <string name="choan_price_2">25,000원</string>
+    <string name="choan_price_3">25,000원</string>
+    <string name="choan_price_4">30,000원</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
